@@ -1,6 +1,6 @@
 # Deep Learning with Pytorch
 # Module 4: Neural Network with Pytorch
-# Sequential
+# Sequential Module
 
 import torch
 from torch.autograd import Variable

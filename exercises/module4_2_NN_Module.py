@@ -20,6 +20,13 @@ y = x + 0.2*torch.rand(x.size())
 
 x, y = Variable(x), Variable(y)
 
+# x = [1,2,3,4,5]
+# y = [0,-1.1,-1.8,-3.1,-4.5]
+
+# x = Variable(torch.unsqueeze(torch.Tensor(x),dim=1))
+# y = Variable(torch.unsqueeze(torch.Tensor(y),dim=1))
+
+
 # plt.scatter(x.data.numpy(), y.data.numpy())
 # plt.show()
 

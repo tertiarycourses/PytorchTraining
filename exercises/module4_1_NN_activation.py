@@ -42,3 +42,6 @@ plt.show()
 # print(F.softmax(data))
 # print(F.softmax(data).sum()) 
 
+# import numpy as np
+# print(-np.log(0.73))
+# print(-np.log(0.23))

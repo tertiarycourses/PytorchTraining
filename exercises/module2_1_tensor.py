@@ -42,8 +42,8 @@ import numpy as np
 # print(a_np)
 
 # b = torch.Tensor(a)
-#b_t = torch.sum(b)
-#b_t = torch.mean(b)
+# b_t = torch.sum(b)
+# b_t = torch.mean(b)
 # b_t = torch.max(b)
 # print(b_t)
 
@@ -52,7 +52,7 @@ import numpy as np
 # a_np = np.array(a)
 # b_np = np.array(b)
 # c_np = np.matmul(a_np,b_np)
-# d_np = np_a.dot(b_np)
+# d_np = a_np.dot(b_np)
 # print(c_np)
 # print(d_np)
 
@@ -66,8 +66,8 @@ import numpy as np
 # a = torch.eye(3)
 
 # Torch Max
-a = torch.Tensor([[1,0,0],[1,0,0],[0,1,0],[0,0,1]])
-print(torch.max(a,1))
+# a = torch.Tensor([[1,0,0],[1,0,0],[0,1,0],[0,0,1]])
+# print(torch.max(a,1))
 
 # Torch Linspace
 # a_np = np.linspace(1,5,10)

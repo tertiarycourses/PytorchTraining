@@ -16,7 +16,7 @@ test_data = torchvision.datasets.MNIST(
     transform=transforms.ToTensor())
 test_loader = torch.utils.data.DataLoader(
     test_data, 
-    batch_size=128, 
+    batch_size=100, 
     shuffle=True, 
     num_workers=2)
 
@@ -24,6 +24,7 @@ model = torch.load('mnist.pkl')
 
 correct = 0
 total = 0
+
 for (x,y) in test_loader:
     x = Variable(x.view(-1, 28*28))           
     yhat = model(x)

@@ -6,6 +6,7 @@ These are the exercise files used for [Deep Learning with PyTorch](https://www.t
 The course outline can be found in 
 
 https://www.tertiarycourses.com.sg/deep-learning-with-pytorch.html
+
 https://www.tertiarycourses.com.my/deep-learning-with-pytorch-malaysia.html
 
 <h2>Day 1</h2>

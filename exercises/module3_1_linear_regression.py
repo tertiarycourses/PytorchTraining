@@ -48,4 +48,5 @@ plt.plot(X_train,y_train,'o')
 plt.plot(X_train,W*X_train+b,'r')
 plt.show()
 
+torch.save(model,'nn.pkl')
 

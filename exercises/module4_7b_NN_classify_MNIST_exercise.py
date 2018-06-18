@@ -44,7 +44,8 @@ L1 = 200
 L2 = 100
 L3 = 60
 L4 = 30
-
+L5 = 50
+L6 = 60
 
 model = nn.Sequential(
     nn.Linear(28*28, L1),
@@ -55,7 +56,11 @@ model = nn.Sequential(
     nn.ReLU(),
     nn.Linear(L3, L4),
     nn.ReLU(),
-    nn.Linear(L4, 10),
+    nn.Linear(L4, L5),
+    nn.ReLU(),
+    nn.Linear(L5, L6),
+    nn.ReLU(),
+    nn.Linear(L6, 10),
 )
 
 # Step 3: Loss Function

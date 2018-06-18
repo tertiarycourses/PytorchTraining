@@ -19,7 +19,7 @@ model = models.vgg16(pretrained=True)
 # model = models.densenet_161(pretrained=True)
 # model = models.inception_v3(pretrained=True)
 
-image_path = 'images/football-299.jpg'
+image_path = 'images/test.jpg'
 
 # Image pre-processing
 normalize = transforms.Normalize(

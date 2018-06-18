@@ -5,7 +5,6 @@
 import torch
 import torchvision
 import torchvision.transforms as transforms
-import matplotlib.pyplot as plt
 from torch.autograd import Variable
 import torch.nn as nn
 import torch.nn.functional as F
@@ -73,13 +72,15 @@ class CNN(nn.Module):
         super(CNN, self).__init__()
         self.conv1 = nn.Conv2d(1,16,3,1,1)
         self.conv2 = nn.Conv2d(16,32,3,1,1)
+        self.conv3 = nn.Conv2d(32, 64, 3, 1, 1)
         #self.dropout = nn.Dropout2d()
-        self.fc = nn.Linear(32 * 7 * 7, 10)
+        self.fc = nn.Linear(64 * 7 * 7, 10)
 
     def forward(self, x):
         x = F.max_pool2d(F.relu(self.conv1(x)),2)
         #x = self.dropout(x)
         x = F.max_pool2d(F.relu(self.conv2(x)),2)
+        x = F.relu(self.conv3(x))
         x = x.view(x.size(0), -1)
         x = self.fc(x)
         return x
@@ -121,8 +122,6 @@ def main():
         total = y.size(0)
         correct = (y_pred == y).sum()
     print('Test accuracy: %.2f %%' % (100 * correct / total))
-
-    torch.save(cnn, 'cnn.pkl')  # save entire net
 
 if __name__ == '__main__':
     main()

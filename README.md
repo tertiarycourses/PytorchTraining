@@ -1,5 +1,5 @@
 # Deep Learning with PyTorch
-## by [Tertiary Infotech Pte. Ltd](https://www.tertiarycourses.com.sg/)
+## by [Tertiary Courses](https://www.tertiarycourses.com.sg/)
 
 These are the exercise files used for [Deep Learning with PyTorch](https://www.tertiarycourses.com.sg/deep-learning-with-pytorch.html) course. 
 
